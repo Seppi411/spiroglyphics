@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP Skript</title>
+    <style>
+        /* Allgemeine Stile */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0 auto;
+            max-width: 800px;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+
+        /* Hauptüberschrift */
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Kapitelüberschriften */
+        h2 {
+            color: #34495e;
+            font-size: 1.75em;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+
+        /* Abschnittsüberschriften */
+        h3 {
+            color: #7f8c8d;
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+
+        /* Stil für Schlagwörter */
+        .keyword {
+            font-weight: bold;
+            color: #3498db; /* Blau für Schlagwörter */
+        }
+
+        /* Stil für wichtige Begriffe */
+        .important {
+            font-weight: bold;
+            color: #e74c3c; /* Rot für besonders wichtige Begriffe */
+        }
+
+        /* Code-Formatierung für Inline-Code */
+        code {
+            background-color: #ecf0f1;
+            padding: 2px 5px;
+            font-size: 1em;
+            color: #c0392b;
+            border-radius: 3px;
+        }
+
+        /* Stil für größere Code-Blöcke */
+        pre {
+            background-color: #ecf0f1;
+            padding: 10px;
+            font-size: 1em;
+            color: #c0392b;
+            border-radius: 3px;
+            overflow-x: auto;
+            margin-top: 10px;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>C#</h1>
+
+    <h2>Was ist Objektorientierung?</h2>
+    <p>Die Objektorientierung ist ein <span class="keyword">Modellierungsansatz</span> und <span class="keyword">Programmierparadigma</span>, bei dem <span class="keyword">Objekte</span> und deren <span class="keyword">Wechselwirkungen</span> aus der Realität in ein Modell und später in ein Programm überführt werden. Durch die Realitätsnähe des Modells und des Programms entstehen leichter änderbare und wartbare IT-Systeme.</p>
+
+    <h2>Ziele der Objektorientierung</h2>
+    <p>Die Objektorientierung verfolgt mehrere zentrale Ziele:</p>
+    <ul>
+        <li><span class="keyword">Modularität:</span> Der Code wird in kleinere, unabhängige Einheiten (Klassen und Objekte) aufgeteilt, was die Entwicklung und Wartung erleichtert.</li>
+        <li><span class="keyword">Wiederverwendbarkeit:</span> Durch die Struktur in Klassen lassen sich Codebestandteile effizient wiederverwenden.</li>
+        <li><span class="keyword">Erweiterbarkeit:</span> Objektorientierte Programme sind so aufgebaut, dass sie leicht um neue Funktionalitäten ergänzt werden können, ohne bestehenden Code zu verändern.</li>
+        <li><span class="keyword">Wartbarkeit:</span> Die Strukturierung in Klassen und Objekte macht Programme verständlicher und vereinfacht die Wartung.</li>
+    </ul>
+
+    <h2>Was ist ein Objekt?</h2>
+    <p>Ein Objekt in der Informatik repräsentiert einen digitalen Zwilling eines in der Realität existierenden Objektes. Ein Objekt kann sowohl <span class="keyword">Attribute</span> (Daten) als auch <span class="keyword">Methoden</span> (Funktionen) enthalten, die dessen Verhalten definieren.</p>
+    
+    <h2>Was sind Attribute?</h2>
+    <p>Attribute, auch als <span class="keyword">Eigenschaften</span> bezeichnet, gehören zu einem Objekt und beschreiben dieses näher. Sie stellen die Daten dar, die das Objekt charakterisieren, wie zum Beispiel Farbe, Größe oder andere relevante Merkmale.</p>
+    
+    <h2>Was ist eine Methode?</h2>
+    <p>Methoden beschreiben Dinge, die von Objekten getan werden können. Sie definieren das Verhalten eines Objekts. Zum Beispiel kann ein Objekt, das eine Person repräsentiert, Methoden haben wie <span class="keyword">trinken</span>, <span class="keyword">sprechen</span> oder <span class="keyword">Auskunft geben</span>.</p>
+
+    <h2>Die drei Phasen der Objektorientierung</h2>
+    <p>Die objektorientierte Programmierung umfasst drei zentrale Phasen:</p>
+    <ul>
+        <li><span class="keyword">Objektorientierte Analyse (OOA):</span> In dieser Phase werden die Anforderungen an das System erfasst und analysiert. Es werden Objekte identifiziert, die aus der realen Welt stammen, und deren Beziehungen zueinander beschrieben.</li>
+        <li><span class="keyword">Objektorientiertes Design (OOD):</span> Hier wird das System entworfen. Die identifizierten Objekte werden in Klassen strukturiert, und die Beziehungen sowie die Interaktionen zwischen diesen Klassen werden festgelegt.</li>
+        <li><span class="keyword">Objektorientierte Programmierung (OOP):</span> In dieser Phase wird der tatsächliche Code geschrieben. Die Klassen und Objekte werden programmiert, und die definierten Methoden und Attribute werden implementiert.</li>
+    </ul>
+    <!DOCTYPE html>
+    <html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>UML Klassendiagramm</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f9f9f9;
+                padding: 20px;
+                text-align: center;
+            }
+    
+            .uml-class {
+                border: 1px solid #34495e;
+                border-radius: 5px;
+                width: 250px;
+                margin: 20px auto;
+                background-color: #ecf0f1;
+            }
+    
+            .uml-class h2 {
+                background-color: #34495e;
+                color: white;
+                margin: 0;
+                padding: 10px;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+    
+            .attributes, .methods {
+                padding: 10px;
+                text-align: left;
+            }
+    
+            .attributes li, .methods li {
+                margin: 5px 0;
+            }
+    
+            .keyword {
+                font-weight: bold;
+                color: #3498db;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <div class="uml-class">
+            <h2>Auto</h2>
+            <div class="attributes">
+                <strong>Attribute:</strong>
+                <ul>
+                    <li>- <span class="keyword">marke</span>: String</li>
+                    <li>- <span class="keyword">modell</span>: String</li>
+                    <li>- <span class="keyword">baujahr</span>: int</li>
+                    <li>- <span class="keyword">farbe</span>: String</li>
+                </ul>
+            </div>
+            <div class="methods">
+                <strong>Methoden:</strong>
+                <ul>
+                    <li>+ <span class="keyword">fahren</span>(): void</li>
+                    <li>+ <span class="keyword">bremsen</span>(): void</li>
+                    <li>+ <span class="keyword">hupen</span>(): void</li>
+                </ul>
+            </div>
+        </div>
+    
+    </body>
+    </html>
+
+    <h2>Prinzip der Datenkapselung</h2>
+    <p>Das Prinzip der <span class="keyword">Datenkapselung</span> bezieht sich darauf, dass die internen Zustände eines Objekts vor der Außenwelt verborgen werden. Dadurch werden die Daten eines Objekts geschützt und nur über definierte Methoden (Getter und Setter) zugänglich gemacht. Dies hat mehrere Vorteile:</p>
+    <ul>
+        <li><span class="keyword">Schutz der Datenintegrität:</span> Durch den kontrollierten Zugriff auf die Daten können unerwünschte Änderungen oder Fehler vermieden werden.</li>
+        <li><span class="keyword">Verbesserte Wartbarkeit:</span> Änderungen an den internen Implementierungen eines Objekts wirken sich nicht auf den Code aus, der das Objekt verwendet, solange die Schnittstelle unverändert bleibt.</li>
+        <li><span class="keyword">Reduzierte Komplexität:</span> Der Benutzer des Objekts muss sich nicht um die internen Details kümmern und kann sich auf die bereitgestellten Methoden konzentrieren.</li>
+    </ul>
+
+    <h2>Was ist eine Klasse und was ist ein Objekt?</h2>
+    <p>In der objektorientierten Programmierung ist eine <span class="keyword">Klasse</span> eine Vorlage oder ein Bauplan, der beschreibt, wie Objekte erzeugt werden. Eine Klasse definiert die <span class="keyword">Attribute</span> (Daten) und <span class="keyword">Methoden</span> (Funktionen), die die Objekte besitzen.</p>
+    <p>Ein <span class="keyword">Objekt</span> hingegen ist eine Instanz einer Klasse. Es stellt ein konkretes Beispiel dar, das auf der in der Klasse definierten Struktur basiert. Jedes Objekt hat eigene Werte für die Attribute, die in der Klasse definiert sind. Beispielsweise könnte die Klasse „Auto“ verschiedene Objekte repräsentieren, wie ein rotes Auto und ein blaues Auto, die unterschiedliche Werte für das Attribut „farbe“ haben.</p>
+
+    <h2>Klassenmodifizierer in C#</h2>
+    <p>In C# gibt es verschiedene Modifizierer, die das Verhalten von Klassen und deren Mitgliedern steuern. Hier sind die wichtigsten Modifizierer:</p>
+    
+    <h3>1. Objekt-Klassen</h3>
+    <p>Eine öffentliche Klasse, die keinen Modifizierer hat:</p>
+    <pre><code>
+    public class CMyClass { }
+    </code></pre>
+    <ul>
+        <li><strong>Eigenschaften:</strong>
+            <ul>
+                <li>Öffentliche Klasse: <span class="keyword">public</span> (ohne Angabe ist die Klasse automatisch <span class="keyword">private</span>!)</li>
+                <li>Standard Sichtbarkeit der Attribute: <span class="keyword">private</span></li>
+                <li>Kann Implementierungen enthalten und statische Member haben.</li>
+                <li>Kann vererbt werden.</li>
+                <li>Beliebig viele Objekte können instanziiert werden.</li>
+            </ul>
+        </li>
+    </ul>
+    
+    <h3>2. Statische Klasse</h3>
+    <p>Eine Klasse, die mit dem Modifizierer <span class="keyword">static</span> deklariert wird:</p>
+    <pre><code>
+    public static class CMyClass { }
+    </code></pre>
+    <ul>
+        <li><strong>Eigenschaften:</strong>
+            <ul>
+                <li>Alle Member müssen statisch sein.</li>
+                <li>Zugriff über den Klassennamen: <span class="keyword">CMyClass.Output()</span></li>
+                <li>Statische Klassen können nicht vererbt werden.</li>
+            </ul>
+        </li>
+    </ul>
+    
+    <h3>3. Versiegelte Klassen</h3>
+    <p>Eine Klasse, die nicht vererbt werden kann:</p>
+    <pre><code>
+    public sealed class CMyClass { }
+    </code></pre>
+    <ul>
+        <li><strong>Eigenschaften:</strong> Kann nicht vererbt werden.</li>
+    </ul>
+    
+    <h3>4. Abstrakte Klassen</h3>
+    <p>Eine Klasse, die mit dem Modifizierer <span class="keyword">abstract</span> deklariert wird:</p>
+    <pre><code>
+    public abstract class CMyClass { }
+    </code></pre>
+    <ul>
+        <li><strong>Eigenschaften:</strong>
+            <ul>
+                <li>Abstrakte Klassen müssen vererbt werden.</li>
+                <li>Sie können abstrakte Member enthalten, die in abgeleiteten Klassen implementiert werden müssen.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>Was ist UML?</h2>
+    <p>UML (Unified Modeling Language) ist eine standardisierte Modellierungssprache, die verwendet wird, um das Design und die Architektur von Software-Systemen zu visualisieren, zu spezifizieren, zu konstruieren und zu dokumentieren. UML bietet eine Vielzahl von Diagrammen, um unterschiedliche Aspekte eines Systems darzustellen, und ermöglicht es Entwicklern, ihre Entwürfe klar und verständlich zu kommunizieren.</p>
+
+    <h2>Typen von UML-Diagrammen</h2>
+    <p>UML-Diagramme werden in zwei Hauptkategorien unterteilt: <span class="keyword">Strukturdiagramme</span> und <span class="keyword">Verhaltensdiagramme</span>.</p>
+
+    <h3>1. Strukturdiagramme</h3>
+    <p>Strukturdiagramme zeigen die statische Struktur eines Systems und die Beziehungen zwischen seinen Elementen. Einige Beispiele für Strukturdiagramme sind:</p>
+    <ul>
+        <li><span class="keyword">Klassendiagramm:</span> Stellt die Klassen eines Systems und deren Beziehungen dar.</li>
+        <li><span class="keyword">Objektdiagramm:</span> Zeigt Instanzen der Klassen zu einem bestimmten Zeitpunkt.</li>
+        <li><span class="keyword">Komponentendiagramm:</span> Stellt die physische Struktur von Software-Elementen dar.</li>
+        <li><span class="keyword">Verteilungsdiagramm:</span> Zeigt die physische Anordnung von Software und Hardware.</li>
+    </ul>
+
+    <h3>2. Verhaltensdiagramme</h3>
+    <p>Verhaltensdiagramme zeigen das Verhalten eines Systems im Laufe der Zeit. Einige Beispiele für Verhaltensdiagramme sind:</p>
+    <ul>
+        <li><span class="keyword">Anwendungsfalldiagramm (Use Case Diagram):</span> Stellt die Interaktionen zwischen Benutzern und Systemen dar.</li>
+        <li><span class="keyword">Aktivitätsdiagramm:</span> Beschreibt die Abläufe und Aktionen innerhalb eines Prozesses.</li>
+        <li><span class="keyword">Zustandsdiagramm:</span> Zeigt die Zustände eines Objekts und die Übergänge zwischen diesen Zuständen.</li>
+    </ul>
+
+    <h3>3. Interaktionsdiagramme</h3>
+    <p>Interaktionsdiagramme sind eine Unterkategorie der Verhaltensdiagramme und konzentrieren sich auf die Interaktionen zwischen Objekten. Beispiele hierfür sind:</p>
+    <ul>
+        <li><span class="keyword">Sequenzdiagramm:</span> Zeigt die zeitliche Reihenfolge der Nachrichten zwischen Objekten.</li>
+        <li><span class="keyword">Kommunikationsdiagramm:</span> Stellt die Interaktionen zwischen Objekten in einem Netzwerk dar.</li>
+    </ul>
+
+    <h2>Generalisierung, Spezialisierung, Polymorphie und Vererbung</h2>
+
+    <h3>1. Generalisierung</h3>
+    <p>Generalisierung ist der Prozess, bei dem gemeinsame Merkmale und Eigenschaften mehrerer Klassen in einer übergeordneten Klasse zusammengefasst werden. Dies fördert die Wiederverwendbarkeit und reduziert die Redundanz im Code.</p>
+    <pre><code>
+    public class Fahrzeug
+    {
+        public int Geschwindigkeit { get; set; }
+        
+        public void Fahren()
+        {
+            // Logik für das Fahren
+        }
+    }
+    </code></pre>
+
+    <h3>2. Spezialisierung</h3>
+    <p>Spezialisierung ist der Prozess, bei dem eine Unterklasse spezifische Eigenschaften und Methoden der übergeordneten Klasse erbt und zusätzlich eigene spezifische Merkmale hinzufügt. Dies ermöglicht die Anpassung und Erweiterung von Funktionalitäten.</p>
+    <pre><code>
+    public class Auto : Fahrzeug
+    {
+        public int AnzahlTüren { get; set; }
+        
+        public void Hupen()
+        {
+            // Logik für das Hupen
+        }
+    }
+    </code></pre>
+
+    <h3>3. Polymorphie</h3>
+    <p>Polymorphie ermöglicht es, dass eine Methode in verschiedenen Klassen unterschiedlich implementiert werden kann, während die Methode denselben Namen hat. Dies wird häufig in Verbindung mit Vererbung verwendet, um spezifische Implementierungen in Unterklassen zu ermöglichen.</p>
+    <pre><code>
+    public class Fahrrad : Fahrzeug
+    {
+        public override void Fahren()
+        {
+            // Logik für das Fahren mit einem Fahrrad
+        }
+    }
+    </code></pre>
+
+    <h3>4. Vererbung</h3>
+    <p>Vererbung ist ein zentrales Konzept in der objektorientierten Programmierung, bei dem eine Klasse (Unterklasse) von einer anderen Klasse (Oberklasse) erbt. Die Unterklasse erhält alle Attribute und Methoden der Oberklasse und kann diese erweitern oder überschreiben.</p>
+    <pre><code>
+    public class Lastwagen : Fahrzeug
+    {
+        public int LaderaumVolumen { get; set; }
+    }
+    </code></pre>
+
+    <h3>Accessor</h3>
+    <p>Accessor sind spezielle Methoden, die den Zugriff auf private oder geschützte Attribute einer Klasse ermöglichen. Sie bieten eine kontrollierte Schnittstelle zum Lesen (Getter) oder Schreiben (Setter) der Werte dieser Attribute. Dies fördert die Datenkapselung und schützt die Integrität der Daten.</p>
+
+    <h4>Beispiel für Accessoren:</h4>
+    <pre><code>
+    public class Person
+    {
+        private string name;
+
+        // Getter für das Attribut 'name'
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+    }
+    </code></pre>
+
+
+</body>
+</html>
